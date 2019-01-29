@@ -1,0 +1,16 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+
+<body>
+    <p class="h3">당신이 입력한 텍스트는 단어로 구성되어 있습니다.</p>
+
+    <a href="{% url 'home' %}"> 다시하기 </a>
+    <p></p>
+
+    <p class="h3">입력한 텍스트:</p>
+    {{ fulltext }}
+    <p></p>
+    <p class="h3">단어 카운트:</p>
+    {{ total }}
+</body>

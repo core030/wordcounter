@@ -1,0 +1,17 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+
+<body>
+    <span class="h1">WORD COUNTER</span><span class="badge badge-warning">New!</span>
+    <p></p>
+    <a href="{% url 'about' %}" class="btn btn-info">ABOUT</a>
+    <p></p>
+    <form action="{% url 'count' %}">
+        <textarea class="rounded border border-info" cols="40" rows="10" name="fulltext"></textarea>
+        <br>
+        <input type="submit" class="btn btn-outline-warning" value="Count!" />
+    </form>
+
+</body>
+
